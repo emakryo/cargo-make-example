@@ -1,0 +1,10 @@
+[tasks.all]
+script = ['''
+cd sample-project
+cargo build
+''']
+
+[tasks.clean]
+clear = true
+workspace = false
+script = ["cargo uninstall cargo-audit"]

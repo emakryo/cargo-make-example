@@ -1,0 +1,9 @@
+[tasks.all]
+dependencies = [
+	"clippy",
+	"test",
+	"reformat",
+]
+
+[tasks.reformat]
+script = ["cargo fmt -- --emit files"]
